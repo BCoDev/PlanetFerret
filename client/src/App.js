@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Nav />
         <Routes>
-          <Route path='/home' element={< Home/>} />
+          <Route path='/' element={< Home/>} />
 
         </Routes>
         <Footer />
