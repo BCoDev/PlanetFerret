@@ -8,14 +8,14 @@ a:hover {
   text-decoration: none; 
 }
 nav {
-  width: 100%; }
-
+  width: 100%; 
+}
 .row .navbar-nav {
   margin: 0px auto;
   width: 80%;
   display: flex;
-  justify-content: space-between; }
-
+  justify-content: space-between; 
+}
 .navbar-nav li {
   font-size: 14pt;
   font-weight: bold; }
@@ -229,16 +229,13 @@ h4 {
   display: block; }
 
 .resources-accordion h5 > a {
-  color: #fff;
+  color: #000;
   font-weight: bold; }
 
 .resources-accordion {
   text-align: center; }
 
-.resources-accordion a:hover {
-  color: #981398; }
-
-.resources-accordion .card-header {
+.resources-accordion .back-color {
   background-color: #344863; }
 
 .more-block-text {
