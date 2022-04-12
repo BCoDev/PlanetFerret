@@ -8,7 +8,7 @@ a:hover {
   text-decoration: none; 
 }
 nav {
-  width: 100%; 
+  width: 75%; 
 }
 .row .navbar-nav {
   margin: 0px auto;
@@ -35,8 +35,8 @@ nav {
   text-align: center;
   display: block;
   margin-bottom: 0;
-  padding-top: 0px; }
-
+  padding-top: 0px; 
+}
 header a {
   color: #344863;
   font-weight: bold;
@@ -53,11 +53,10 @@ header h1 {
 	display: block;
 	margin: 0 auto;
 }
-
 .card-body {
   background-color: #fef3ea;
-  color: #344863; }
-
+  color: #344863; 
+}
 .about-more p {
   display: block;
   margin: 0 auto; }
@@ -70,14 +69,12 @@ header h1 {
 	margin-left: 0;
 	margin-bottom: 20px;
 }
-
 .flt_rgt {
 	float: right;
 }
-
 .flt_lft {
-  float: left; }
-
+  float: left; 
+}
 .main-content {
   display: flex;
   height: 150px;
@@ -89,8 +86,8 @@ header h1 {
   color: #344863;
   font-weight: bold;
   align-items: center;
-  line-height: 2; }
-
+  line-height: 2; 
+}
 .about-more {
   display: flex;
   height: 100px;
@@ -216,7 +213,8 @@ header h1 {
   color: #344863; }
 
 .email {
-  color: #344863; }
+  color: #344863; 
+}
 h4 {
     margin-top: 20px;
     font-weight: bold;
@@ -228,22 +226,20 @@ h4 {
   text-align: center;
   display: block; }
 
-.resources-accordion h5 > a {
-  color: #000;
-  font-weight: bold; }
-
 .resources-accordion {
-  text-align: center; }
-
+  color: #fff;
+  font-weight: bold; 
+  text-align: center; 
+}
 .resources-accordion .back-color {
-  background-color: #344863; }
-
+  background-color: #344863; 
+}
 .more-block-text {
   display: flex;
   align-items: center;
   height: 300px;
-  margin-top: 50px; }
-
+  margin-top: 50px; 
+}
 .more-block-text p {
   margin: 0 auto;
   text-align: center;

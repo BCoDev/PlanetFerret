@@ -14,7 +14,7 @@ const About = () => {
                         <br />
                         We wish to help guide you whether you are deciding to have these furry critters in your life or have already made that decision.
                         <br />
-                        <span>We just want best for you and your family.</span>
+                        <span>We just want the best for you and your family.</span>
                     </p>
                 </article>
 
