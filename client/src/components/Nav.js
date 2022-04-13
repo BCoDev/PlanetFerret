@@ -1,22 +1,26 @@
 import { Link } from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
 
-const Nav = () => {
+const NavBar = () => {
     return (
-    <div className="row">
-        <nav className="navbar navbar-expand-md navbar-light">
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent1">
-                <ul className="navbar-nav">
-                    <li className="nav-item"><Link to="/">Home</Link></li>
-                    <li className="nav-item"><Link to="/about">About</Link></li>
-                    <li className="nav-item"><Link to="/resources">Resources</Link></li>
-                    <li className="nav-item"><Link to="/activism">Activism</Link></li>
-                    <li className="nav-item"><Link to="/contact">Contact Us</Link></li>
-                </ul>
-            </div>
-        </nav>
-    </div>    
+        <Nav variant="tabs" className="navbar">
+            <Nav.Item>
+                <Link to="/" className="nav-item">Home</Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Link to="/about" className="nav-item">About</Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Link to="/resources" className="nav-item">Resources</Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Link to="/activism" className="nav-item">Activism</Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Link to="/contact" className="nav-item">Contact Us</Link>
+            </Nav.Item>
+        </Nav>
     )
 }
 
-export default Nav
+export default NavBar

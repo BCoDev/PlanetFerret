@@ -1,34 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+  font-family: "Futura";
+  src: url("../src/assets/fonts/FuturaBookfont.ttf"); }
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #fef3ea; 
+  font-family: "Futura", sans-serif;
+  background-color: #fef3ea;
   margin: 0;
+  /* height: 100vh; */
+}
+/* #root, .App {
+  height: 75%;
+} */
+.App .container {
+  width: 100%;
+  padding: 10px 50px;
+}
+a {
+  text-decoration: none; 
 }
 a:hover {
   text-decoration: none; 
+  color: rgb(16, 133, 16);
 }
-nav {
-  width: 75%; 
-}
-.row .navbar-nav {
-  margin: 0px auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-between; 
-}
-.navbar-nav li {
-  font-size: 14pt;
-  font-weight: bold; }
-
-.nav-item a {
-  padding: 15px 10px 5px 0px;
+h4 {
+  margin-top: 20px;
+  font-weight: bold;
   color: #344863;
-  text-decoration: none; }
-
-.nav-item a:hover {
-  text-decoration: none;
-  color: #4E97E7; }
-
+}
+/* Header */
+header {
+  height: 75px; 
+}
+header a {
+  color: #344863;
+  font-weight: bold;
+  display: block;
+  text-align: center; 
+}
+header h1 {
+  margin-bottom: 0; 
+}
 .logo {
   color: #f7882f;
   font-weight: bolder;
@@ -37,79 +47,52 @@ nav {
   margin-bottom: 0;
   padding-top: 0px; 
 }
-header a {
+/* NavBar */
+.navbar {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 50px;
+}
+.nav-item a {
+  font-size: 14pt;
+  font-weight: bold; 
+  padding: 15px 10px 5px 10px;
   color: #344863;
-  font-weight: bold;
-  display: block;
-  text-align: center; }
-
-header {
-  height: 75px; }
-
-header h1 {
-  margin-bottom: 0; }
-
-.mainferret {
-	display: block;
-	margin: 0 auto;
+  text-decoration: none; 
 }
-.card-body {
-  background-color: #fef3ea;
-  color: #344863; 
+.nav-item a:hover {
+  text-decoration: none;
+  color: rgb(16, 133, 16);
 }
-.about-more p {
-  display: block;
-  margin: 0 auto; }
-
-.smallferret-container {
-	position: relative;
-	overflow: hidden;
-	margin-top: 50px;
-	margin-right: 0;
-	margin-left: 0;
-	margin-bottom: 20px;
-}
-.flt_rgt {
-	float: right;
-}
-.flt_lft {
-  float: left; 
-}
+/* HomePage */
 .main-content {
   display: flex;
-  height: 150px;
-  margin-top: 0px;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 20px;
+  margin: 0px 0 20px 0;
   text-align: center;
   color: #344863;
   font-weight: bold;
   align-items: center;
   line-height: 2; 
 }
-.about-more {
-  display: flex;
-  height: 100px;
-  text-align: center;
-  color: #344863;
-  font-weight: bold;
-  align-items: center;
-  line-height: 2; }
-
+.mainferret {
+	display: block;
+	margin: 0 auto;
+}
 .main-content p {
-  margin: auto; }
-
+  margin: auto; 
+}
 .main-content p span {
-  font-size: 32px; }
-
+  font-size: 32px; 
+}
 .dariagif img {
   width: 75%;
   margin: 50px auto 0 auto;
   width: 413px;
-  height: 300px; }
-
-.block-text {
+  height: 300px; 
+}
+.home-block-text {
   display: flex;
   align-items: center;
   height: 300px;
@@ -117,115 +100,55 @@ header h1 {
   line-height: 2;
   font-size: 18px;
   margin-top: 50px;
-  margin-left: auto; }
-
-.contact-block-text {
-  display: flex;
-  align-items: center;
-  height: 400px;
-  background-color: #344863;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.activism-block-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 300px;
-  background-color: #344863;
-  margin-top: 50px; }
-
-.activism-rgt-block-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 300px;
-  margin-top: 50px; }
-
-.block-text p {
+  padding: 10px;
+}
+.home-block-text p {
   text-align: center;
-  margin: auto;
-  color: #fff; }
-
+  margin: 10px;
+  color: #fff; 
+  padding: 20px;
+}
+/* About */
 .about-main-content {
   height: 100%;
-  margin-top: 50px;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 20px;
+  margin: 50px 0 20px 0;
   text-align: center;
   display: flex;
-  color: #344863; }
-
+  align-items: center;
+  color: #344863; 
+}
 .about-main-content > p {
   margin: auto;
   line-height: 2;
   font-size: 16px;
-  font-weight: bold; }
-
-.about-main-content > p > span {
+  font-weight: bold; 
+}
+.about-main-content Row > Col > p > span {
   font-size: 24px;
-  font-weight: bold; }
-
+  font-weight: bold; 
+}
 .about-block-text {
-  font-weight: bold;
-  margin-top: 50px;
-  color: #344863; }
-
+  margin-top: 100px;
+}
+.grassferret-container {
+	position: relative;
+	overflow: hidden;
+	margin-top: 50px 0 20px 0;
+}
+.flt_rgt {
+	float: right;
+}
 .about-block-text p {
   text-align: center;
   font-size: 16px;
   line-height: 2;
-  font-weight: bold; }
-
-.activism-block-text p {
-  text-align: center;
-  margin: auto;
+  font-weight: bold; 
+}
+/* Resources */
+#resources-cursor {
+  cursor: pointer;
   color: #fff;
-  font-size: 24px;
-  font-weight: bold; }
-
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 30px;
-  align-items: flex-end;
-  color: #344863; }
-
-.contact {
-  margin-top: 5px;
-  margin-right: 50px;
-  margin-left: 0;
-  margin-bottom: 0;
-  text-decoration: none;
-  color: #344863;
-  font-weight: bold; }
-
-.social-button a:hover {
-  color: #981398; }
-
-.social-button {
-  margin-top: 0px;
-  margin-right: 10px;
-  margin-left: 5px;
-  margin-bottom: 0px;
-  color: #344863; }
-
-.email {
-  color: #344863; 
 }
-h4 {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #344863;
-}
-#top ul.dropdown-menu > li > a {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  display: block; }
-
 .resources-accordion {
   color: #fff;
   font-weight: bold; 
@@ -234,19 +157,43 @@ h4 {
 .resources-accordion .back-color {
   background-color: #344863; 
 }
-.more-block-text {
+.card-body {
+  background-color: #fef3ea;
+  color: #344863; 
+}
+.card-body ul > li > span {
+  font-size: 24px;
+  font-weight: bold; 
+}
+.resources-video   {
+  height: 315px;
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+/* Activism */
+.activism-block-text {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  background-color: #344863;
+  margin-top: 50px; 
+}
+.activism-rgt-block-text {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 300px;
   margin-top: 50px; 
 }
-.more-block-text p {
-  margin: 0 auto;
+.activism-block-text p {
   text-align: center;
-  color: #344863;
-  font-weight: bold;
-  line-height: 2; }
-
+  margin: auto;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold; 
+}
 .activism-rgt-block-text p {
   margin: 0 20px;
   text-align: center;
@@ -270,35 +217,43 @@ h4 {
   margin: auto;
   text-align: center; }
 
-#text {
-  margin: 0 auto;
-  display: block; }
-
-.card-body ul > li > span {
-  font-size: 24px;
-  font-weight: bold; }
-.resources-video   {
-    height: 315px;
-    width: 600px;
-    margin: 0 auto;
-    display: block;
+/* Contact */
+.contact-block-text {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  background-color: #344863;
+  margin: 0px auto;
+}
+/* Footer */
+.footer {
+  margin-top: 20px;
+  color: #344863; 
+  text-align: right;
+  padding: 5px 10px;
+  width: 100%;
+}
+.social-button {
+  margin: 0 10px 0 5px;
+  color: #344863; 
+}
+.email {
+  color: #344863; 
 }
 
 
 @media (max-width: 990px) {
-  .mainferret-container {
-	max-width: 990px;
-}
-
-  .mainferret-container .mainferret {
-	max-width: initial;
-}
-
+    .mainferret-container {
+    max-width: 990px;
+  }
+    .mainferret-container .mainferret {
+    max-width: initial;
+  }
   .dariagif img {
     display: block;
     margin: 0 auto; }
 
-  .smallferret.flt_rgt {
+  .grassferret.flt_rgt {
 	margin: 0 auto;
 	display: block;
 	float: inherit; } 
@@ -308,22 +263,19 @@ h4 {
     margin: 0 auto;
     display: block; }
 	.resources-video {
-	transform: scale(.5);
-}
-.mainferret-container {
-	overflow: hidden;
-}
+	transform: scale(.5); }
+  .mainferret-container {
+    overflow: hidden; }
 }
 @media (max-width: 576px) {
-.smallferret.hide-ad {
-	display: none;
-}
-
+  .grassferret.hide-ad {
+    display: none;
+  }
 }
 @media (max-width: 430px) {
   .dariagif {
     transform: scale(0.8); }
 
-  .block-text {
-    margin-top: 0; } }
-
+  .home-block-text {
+    margin-top: 0; } 
+}
