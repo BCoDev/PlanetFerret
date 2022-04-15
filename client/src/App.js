@@ -17,11 +17,11 @@ function App() {
       <Container>
         <Header />
         <NavBar />
-        <Routes>
-          <Route exact path='/' element={< Home />} />
-          <Route path='/about' element={< About />} />
-          <Route path='/resources' element={< Resources />} />
-        </Routes>
+          <Routes>
+            <Route exact path='/' element={< Home />} />
+            <Route path='/about' element={< About />} />
+            <Route path='/resources' element={< Resources />} />
+          </Routes>
         <Footer />
       </Container>
     </BrowserRouter>

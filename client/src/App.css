@@ -1,10 +1,14 @@
 @font-face {
   font-family: "Futura";
   src: url("../src/assets/fonts/FuturaBookfont.ttf"); }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
   font-family: "Futura", sans-serif;
-  background-color: #fef3ea;
-  margin: 0;
+  background-color: #FAEFE1;
   /* height: 100vh; */
 }
 /* #root, .App {
@@ -24,14 +28,14 @@ a:hover {
 h4 {
   margin-top: 20px;
   font-weight: bold;
-  color: #344863;
+  color: #06486B;
 }
 /* Header */
-header {
-  height: 75px; 
-}
+/* header {
+  height: 150px; 
+} */
 header a {
-  color: #344863;
+  color: #06486B;
   font-weight: bold;
   display: block;
   text-align: center; 
@@ -40,12 +44,18 @@ header h1 {
   margin-bottom: 0; 
 }
 .logo {
-  color: #f7882f;
+  color: #F08A05;
   font-weight: bolder;
   text-align: center;
   display: block;
   margin-bottom: 0;
   padding-top: 0px; 
+}
+.ferret-logo {
+  background-image: url(../src/assets/images/ferretball.png);
+  background-repeat: no-repeat;
+  display: block;	
+  margin: auto;
 }
 /* NavBar */
 .navbar {
@@ -59,54 +69,78 @@ header h1 {
   font-size: 14pt;
   font-weight: bold; 
   padding: 15px 10px 5px 10px;
-  color: #344863;
+  color: #06486B;
   text-decoration: none; 
 }
 .nav-item a:hover {
   text-decoration: none;
-  color: rgb(16, 133, 16);
+  color: #2C6605;
 }
 /* HomePage */
 .main-content {
   display: flex;
-  margin: 0px 0 20px 0;
-  text-align: center;
-  color: #344863;
-  font-weight: bold;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  color: #06486B;
+  font-weight: bold;
   line-height: 2; 
+  margin: 50px auto;
 }
 .mainferret {
-	display: block;
-	margin: 0 auto;
+  background-image: linear-gradient(
+    to right bottom, 
+    hsla(202, 64%, 43%, 0.6), 
+    hsla(111, 55%, 64%, 0.6)),
+    url(../src/assets/images/mainferret.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 800px;
+  height: 600px;
+	margin: auto;
 }
 .main-content p {
-  margin: auto; 
+  margin: 0 auto 30px auto; 
 }
 .main-content p span {
   font-size: 32px; 
 }
-.dariagif img {
-  width: 75%;
-  margin: 50px auto 0 auto;
-  width: 413px;
-  height: 300px; 
+.home-block {
+  height: 400px; 
+  margin-top: 100px;
+}
+.home-aside-one {
+  display: inline-block;
+  width: 50%;
+}
+.dariagif {
+  margin: 0 auto;
+  width: 500px;
+  height: 95%; 
+}
+.home-aside-two {
+  display: inline-block;
+  width: 50%;
+  height: 95%;
+  background-color: #06486B;
 }
 .home-block-text {
-  display: flex;
-  align-items: center;
-  height: 300px;
-  background-color: #344863;
+  /* display: inline-flex;
+  justify-content: center;
+  flex-direction: column; */
+  text-align: center;
   line-height: 2;
-  font-size: 18px;
-  margin-top: 50px;
-  padding: 10px;
+  padding: 9px;
 }
-.home-block-text p {
+.home-block-text h2 {
   text-align: center;
   margin: 10px;
   color: #fff; 
   padding: 20px;
+}
+.home-block-text p {
+  color: #fff; 
+  font-size: 16px;
 }
 /* About */
 .about-main-content {
@@ -115,7 +149,7 @@ header h1 {
   text-align: center;
   display: flex;
   align-items: center;
-  color: #344863; 
+  color: #06486B; 
 }
 .about-main-content > p {
   margin: auto;
@@ -155,11 +189,11 @@ header h1 {
   text-align: center; 
 }
 .resources-accordion .back-color {
-  background-color: #344863; 
+  background-color: #06486B; 
 }
 .card-body {
   background-color: #fef3ea;
-  color: #344863; 
+  color: #06486B; 
 }
 .card-body ul > li > span {
   font-size: 24px;
@@ -177,7 +211,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   height: 300px;
-  background-color: #344863;
+  background-color: #06486B;
   margin-top: 50px; 
 }
 .activism-rgt-block-text {
@@ -197,7 +231,7 @@ header h1 {
 .activism-rgt-block-text p {
   margin: 0 20px;
   text-align: center;
-  color: #344863;
+  color: #06486B;
   font-weight: bold;
   line-height: 2; }
 
@@ -205,7 +239,7 @@ header h1 {
   display: flex;
   height: 200px;
   text-align: center;
-  color: #344863;
+  color: #06486B;
   font-weight: bold;
   align-items: center;
   line-height: 2; }
@@ -222,25 +256,30 @@ header h1 {
   display: flex;
   align-items: center;
   height: 400px;
-  background-color: #344863;
+  background-color: #06486B;
   margin: 0px auto;
 }
 /* Footer */
 .footer {
   margin-top: 20px;
-  color: #344863; 
+  color: #06486B; 
   text-align: right;
   padding: 5px 10px;
   width: 100%;
 }
 .social-button {
   margin: 0 10px 0 5px;
-  color: #344863; 
+  color: #06486B; 
+}
+.social-button:hover {
+  color: #AD02B3;
 }
 .email {
-  color: #344863; 
+  color: #06486B; 
 }
-
+.email:hover {
+  color: #AD02B3;
+}
 
 @media (max-width: 990px) {
     .mainferret-container {
