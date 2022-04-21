@@ -17,7 +17,7 @@ const NavBar = () => {
                 <Link to="/activism" className="nav-item">Activism</Link>
             </Nav.Item>
             <Nav.Item>
-                <Link to="/contact" className="nav-item">Contact Us</Link>
+                <Link to="/chat" className="nav-item">Chat</Link>
             </Nav.Item>
         </Nav>
     )

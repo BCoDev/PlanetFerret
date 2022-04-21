@@ -5,10 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
+/* $color-background: #FAEFE1 */
 body {
   font-family: "Futura", sans-serif;
   background-color: #FAEFE1;
+  font-size: 14pt;
   /* height: 100vh; */
 }
 /* #root, .App {
@@ -19,6 +21,7 @@ body {
   padding: 10px 50px;
 }
 a {
+  color: #06486B;
   text-decoration: none; 
 }
 a:hover {
@@ -61,15 +64,17 @@ header h1 {
 .navbar {
   display: flex;
   justify-content: space-around; 
+  background-color: #06486B;
+
   width: 100%;
-  margin: 10px 0;
-  padding: 10px 50px;
+  margin: 0 0 10px 0;
+  padding: 15px 50px;
 }
 .nav-item a {
   font-size: 14pt;
   font-weight: bold; 
   padding: 15px 10px 5px 10px;
-  color: #06486B;
+  color: #fff;
   text-decoration: none; 
 }
 .nav-item a:hover {
@@ -86,24 +91,41 @@ header h1 {
   font-weight: bold;
   line-height: 2; 
   margin: 50px auto;
+  background-image: linear-gradient(
+    to right, 
+    hsl(192, 68%, 56%, .6), 
+    hsl(84, 66%, 58%, .6)),
+    url(../src/assets/images/free-ferret.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* width: 850px; */
+  height: 650px;
+	margin: auto;
 }
-.mainferret {
+/* .mainferret {
   background-image: linear-gradient(
     to right bottom, 
-    hsla(202, 64%, 43%, 0.6), 
-    hsla(111, 55%, 64%, 0.6)),
+    hsl(192, 68%, 56%, .6), 
+    hsl(84, 66%, 58%, .6)),
     url(../src/assets/images/mainferret.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  width: 800px;
-  height: 600px;
+  width: 815px;
+  height: 550px;
 	margin: auto;
+} */
+.main-content h1 {
+  margin-top: 10px;
+}
+.main-content h1 span {
+  font-weight: bolder;
+  color: #F08A05;
 }
 .main-content p {
   margin: 0 auto 30px auto; 
 }
-.main-content p span {
-  font-size: 32px; 
+#where-business {
+  font-size: 18;
 }
 .home-block {
   height: 400px; 
@@ -128,8 +150,8 @@ header h1 {
   /* display: inline-flex;
   justify-content: center;
   flex-direction: column; */
+  box-sizing:border-box;
   text-align: center;
-  line-height: 2;
   padding: 9px;
 }
 .home-block-text h2 {
@@ -140,6 +162,7 @@ header h1 {
 }
 .home-block-text p {
   color: #fff; 
+  line-height: 2;
   font-size: 16px;
 }
 /* About */
@@ -279,6 +302,10 @@ header h1 {
 }
 .email:hover {
   color: #AD02B3;
+}
+/* Chat */
+#form {
+  text-align: center;
 }
 
 @media (max-width: 990px) {

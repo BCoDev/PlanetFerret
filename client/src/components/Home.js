@@ -4,20 +4,22 @@ import Daria from '../assets/images/DariaGif.gif'
 // import Container from 'react-bootstrap/Container'
 // import Row from 'react-bootstrap/Row'
 // import Col from 'react-bootstrap/Col' 
+// <div className="mainferret"></div>
+// <br />We meet all your ferret needs here.
+// <br />Learn *almost* everything you need to know here.
 
 
 const Home = () => {
     return (
         <main>
             <section className="main-content">
-                <h2>Welcome to Planet Ferret!</h2>
+
+                <h1>Welcome to <span>Planet Ferret!</span></h1>
                 <p>
-                    We meet all your ferret needs here.
-                    <br />Learn *almost* everything you need to know here.
+                    <span id='where-business'>Where Ferrets are our Business</span>
+
                 </p>
                 
-                <div className="mainferret"></div>
-
             </section>
 
             <section className="home-block">
