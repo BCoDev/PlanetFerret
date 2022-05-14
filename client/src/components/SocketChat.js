@@ -14,7 +14,7 @@ const SocketChat = () => {
         socket.on('receive_message', (data) => {
             setMessageReceived(data.message)
         })
-    }, [socket])
+    }, [])
     return (
         <div>
             <ul id="messages"></ul>
