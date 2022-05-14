@@ -1,16 +1,30 @@
+// Colors
+$color-light: #FAEFE1; 
+$color-blue-dark: #06486B;
+$color-logo: #F08A05;
+$color-hover-one: #2C6605;
+$color-hover-two: #AD02B3;
+// Font
+$default-font: 1.6rem;
+
 @font-face {
   font-family: "Futura";
-  src: url("../src/assets/fonts/FuturaBookfont.ttf"); }
+  src: url("../src/assets/fonts/FuturaBookfont.ttf"); 
+}
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 } 
-/* $color-background: #FAEFE1 */
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Futura", sans-serif;
-  background-color: #FAEFE1;
-  font-size: 14pt;
+  background-color: $color-light;
+  font-size: $default-font;
+  box-sizing: border-box;
   /* height: 100vh; */
 }
 /* #root, .App {
@@ -18,28 +32,28 @@ body {
 } */
 .App .container {
   width: 100%;
-  padding: 10px 50px;
+  padding: 1rem 5rem;
 }
 a {
-  color: #06486B;
+  color: $color-blue-dark;
   text-decoration: none; 
 }
 a:hover {
   text-decoration: none; 
-  color: rgb(16, 133, 16);
+  color: $color-hover-one;
 }
 h4 {
-  margin-top: 20px;
+  margin-top: 2rem;
   font-weight: bold;
-  color: #06486B;
+  color: $color-blue-dark;
 }
 /* Header */
 /* header {
   height: 150px; 
 } */
 header a {
-  color: #06486B;
-  font-weight: bold;
+  color: $color-blue-dark;
+  font-weight: 700;
   display: block;
   text-align: center; 
 }
@@ -48,7 +62,7 @@ header h1 {
 }
 .logo {
   color: #F08A05;
-  font-weight: bolder;
+  font-weight: 800;
   text-align: center;
   display: block;
   margin-bottom: 0;
@@ -60,34 +74,13 @@ header h1 {
   display: block;	
   margin: auto;
 }
-/* NavBar */
-.navbar {
-  display: flex;
-  justify-content: space-around; 
-  background-color: #06486B;
-
-  width: 100%;
-  margin: 0 0 10px 0;
-  padding: 15px 50px;
-}
-.nav-item a {
-  font-size: 14pt;
-  font-weight: bold; 
-  padding: 15px 10px 5px 10px;
-  color: #fff;
-  text-decoration: none; 
-}
-.nav-item a:hover {
-  text-decoration: none;
-  color: #2C6605;
-}
 /* HomePage */
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #06486B;
+  color: $color-blue-dark;
   font-weight: bold;
   line-height: 2; 
   margin: 50px auto;
@@ -95,7 +88,7 @@ header h1 {
     to right, 
     hsl(192, 68%, 56%, .6), 
     hsl(84, 66%, 58%, .6)),
-    url(../src/assets/images/free-ferret.jpg);
+    url(../src/assets/images/ferretingrass.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   /* width: 850px; */
@@ -144,7 +137,7 @@ header h1 {
   display: inline-block;
   width: 50%;
   height: 95%;
-  background-color: #06486B;
+  background-color: $color-blue-dark;
 }
 .home-block-text {
   /* display: inline-flex;
@@ -166,18 +159,20 @@ header h1 {
   font-size: 16px;
 }
 /* About */
-.about-main-content {
-  height: 100%;
-  margin: 50px 0 20px 0;
-  text-align: center;
+.section-about {
   display: flex;
   align-items: center;
-  color: #06486B; 
+}
+.about-main-content {
+  height: 100%;
+  // margin: 50px 0 20px 0;
+  text-align: center;
+  color: $color-blue-dark; 
 }
 .about-main-content > p {
   margin: auto;
   line-height: 2;
-  font-size: 16px;
+  font-size: $default-font;
   font-weight: bold; 
 }
 .about-main-content Row > Col > p > span {
@@ -190,7 +185,12 @@ header h1 {
 .grassferret-container {
 	position: relative;
 	overflow: hidden;
-	margin-top: 50px 0 20px 0;
+	margin-top: 5rem 0 2rem 0;
+
+  & img {
+    height: 100%;
+    width: 100%;
+  }
 }
 .flt_rgt {
 	float: right;
@@ -212,11 +212,11 @@ header h1 {
   text-align: center; 
 }
 .resources-accordion .back-color {
-  background-color: #06486B; 
+  background-color: $color-blue-dark; 
 }
 .card-body {
   background-color: #fef3ea;
-  color: #06486B; 
+  color: $color-blue-dark; 
 }
 .card-body ul > li > span {
   font-size: 24px;
@@ -234,7 +234,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   height: 300px;
-  background-color: #06486B;
+  background-color: $color-blue-dark;
   margin-top: 50px; 
 }
 .activism-rgt-block-text {
@@ -254,7 +254,7 @@ header h1 {
 .activism-rgt-block-text p {
   margin: 0 20px;
   text-align: center;
-  color: #06486B;
+  color: $color-blue-dark;
   font-weight: bold;
   line-height: 2; }
 
@@ -262,7 +262,7 @@ header h1 {
   display: flex;
   height: 200px;
   text-align: center;
-  color: #06486B;
+  color: $color-blue-dark;
   font-weight: bold;
   align-items: center;
   line-height: 2; }
@@ -279,26 +279,26 @@ header h1 {
   display: flex;
   align-items: center;
   height: 400px;
-  background-color: #06486B;
+  background-color: $color-blue-dark;
   margin: 0px auto;
 }
 /* Footer */
 .footer {
   margin-top: 20px;
-  color: #06486B; 
+  color: $color-blue-dark; 
   text-align: right;
   padding: 5px 10px;
   width: 100%;
 }
 .social-button {
   margin: 0 10px 0 5px;
-  color: #06486B; 
+  color: $color-blue-dark; 
 }
 .social-button:hover {
   color: #AD02B3;
 }
 .email {
-  color: #06486B; 
+  color: $color-blue-dark; 
 }
 .email:hover {
   color: #AD02B3;

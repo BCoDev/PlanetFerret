@@ -1,5 +1,5 @@
-// import Ferret from '../assets/images/ferretball.jpg'
 import Daria from '../assets/images/DariaGif.gif'
+// import FerretInGrass from '../assets/images/ferretingrass.jpg'
 
 // import Container from 'react-bootstrap/Container'
 // import Row from 'react-bootstrap/Row'
